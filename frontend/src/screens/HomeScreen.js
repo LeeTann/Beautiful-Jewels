@@ -1,7 +1,7 @@
 import React from 'react'
 import { Col, Row } from 'react-bootstrap'
 import products from '../products'
-import Product from './Pruduct'
+import Product from '../components/Pruduct'
 
 const HomeScreen = () => {
   return (
