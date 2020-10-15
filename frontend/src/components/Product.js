@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom'
 import { Card } from 'react-bootstrap'
 import Rating from './Rating'
 
-const Pruduct = ({ product }) => {
+const Product = ({ product }) => {
   return (
     <>
       <Card className='my-3 p-3 rounded'>
@@ -32,4 +32,4 @@ const Pruduct = ({ product }) => {
   )
 }
 
-export default Pruduct
+export default Product
