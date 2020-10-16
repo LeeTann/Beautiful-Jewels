@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react'
-import { Link, useHistory, useLocation } from 'react-router-dom'
+import { useHistory } from 'react-router-dom'
 import {
   Form,
   Button,
@@ -20,7 +20,6 @@ const ProfileScreen = () => {
   const [password, setPassword] = useState('')
   const [confirmPassword, setConfirmPassword] = useState('')
   const [message, setMessage] = useState(null)
-  const location = useLocation()
   const history = useHistory()
 
   const dispatch = useDispatch()
