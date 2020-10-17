@@ -33,7 +33,7 @@ const addOrderItems = asyncHandler(async (req, res) => {
 
     const createdOrder = await order.save()
 
-    res.status(200).json(createdOrder)
+    res.status(201).json(createdOrder)
   }
 })
 
