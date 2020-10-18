@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from 'react'
 import { Link, useHistory, useParams } from 'react-router-dom'
 import {
-  Button,
   Row,
   Col,
   ListGroup,
@@ -182,7 +181,7 @@ const OrderScreen = () => {
               </ListGroupItem>
               {!order.isPaid && (
                 <ListGroupItem>
-                  {order.isPaid && <Loader />}
+                  {loadingPay && <Loader />}
                   {!sdkReady ? (
                     <Loader />
                   ) : (
