@@ -1,6 +1,9 @@
 {
   "name": "proshop",
   "version": "1.0.0",
+  "engines": {
+    "node": "14.13.0"
+  },
   "description": "MERN ProShop",
   "main": "server.js",
   "type": "module",
