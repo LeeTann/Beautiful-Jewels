@@ -49,3 +49,17 @@ h3 {
 .carousel a {
   margin: 0 auto;
 }
+
+.cat-nav {
+  padding: 10px 10px !important;
+}
+
+.cat-item {
+  color: rgb(52, 58, 64) !important;
+  font-size: larger;
+  cursor: pointer;
+}
+
+.cat-item:hover {
+  color: rgb(145, 139, 139) !important;
+}

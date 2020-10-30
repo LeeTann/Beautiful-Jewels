@@ -69,6 +69,7 @@ const ProductListScreen = () => {
   const createProductHandler = () => {
     dispatch(createProduct())
   }
+  console.log('PRODUCTS', products)
   return (
     <>
       <Row className='align-items-center'>
