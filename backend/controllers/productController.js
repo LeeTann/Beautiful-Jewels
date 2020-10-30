@@ -5,6 +5,15 @@ import Product from '../models/productModel.js'
 // @route   GET /api/products
 // @access  Public
 const getProducts = asyncHandler(async (req, res) => {
+  const products = await Product.find()
+
+  res.json(products)
+})
+
+// @desc    Fetch products limit 8
+// @route   GET /api/products/limit
+// @access  Public
+const getProductsLimit = asyncHandler(async (req, res) => {
   const pageSize = 8
   const page = Number(req.query.pageNumber) || 1
   const keyword = req.query.keyword
@@ -161,6 +170,7 @@ const getTopProducts = asyncHandler(async (req, res) => {
 
 export {
   getProducts,
+  getProductsLimit,
   getProductsById,
   deleteProduct,
   createProduct,

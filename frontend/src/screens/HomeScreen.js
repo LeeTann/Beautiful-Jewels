@@ -10,6 +10,7 @@ import { useParams } from 'react-router-dom'
 import Paginate from '../components/Paginate'
 import ProductCarousel from '../components/ProductCarousel'
 import Meta from '../components/Meta'
+import Ring from '../components/Ring'
 
 const HomeScreen = () => {
   const { keyword } = useParams()

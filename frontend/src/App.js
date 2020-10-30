@@ -18,13 +18,19 @@ import UserEditScreen from './screens/UserEditScreen'
 import ProductListScreen from './screens/ProductListScreen'
 import ProductEditScreen from './screens/ProductEditScreen'
 import OrderListScreen from './screens/OrderListScreen'
+import CategoryHeader from './components/CategoryHeader'
+import RingScreen from './screens/RingScreen'
+import BraceletScreen from './screens/BraceletScreen'
 
 const App = () => {
   return (
     <Router>
       <Header />
+      <CategoryHeader />
       <main className='py-3'>
         <Container>
+          <Route path='/products/bracelets' component={BraceletScreen} />
+          <Route path='/products/rings' component={RingScreen} />
           <Route path='/admin/product/:id/edit' component={ProductEditScreen} />
           <Route
             path='/admin/productlist'

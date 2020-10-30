@@ -21,7 +21,31 @@ import {
   PRODUCT_TOP_REQUEST,
   PRODUCT_TOP_SUCCESS,
   PRODUCT_TOP_FAIL,
+  PRODUCT_ALL_REQUEST,
+  PRODUCT_ALL_SUCCESS,
+  PRODUCT_ALL_FAIL,
 } from '../constants/productConstants'
+
+export const allProducts = () => async (dispatch) => {
+  try {
+    dispatch({ type: PRODUCT_ALL_REQUEST })
+
+    const { data } = await axios.get('/api/products')
+
+    dispatch({
+      type: PRODUCT_ALL_SUCCESS,
+      payload: data,
+    })
+  } catch (error) {
+    dispatch({
+      type: PRODUCT_ALL_FAIL,
+      payload:
+        error.response && error.response.data.message
+          ? error.response.data.message
+          : error.response,
+    })
+  }
+}
 
 export const listProducts = (keyword = '', pageNumber = '') => async (
   dispatch
@@ -30,7 +54,7 @@ export const listProducts = (keyword = '', pageNumber = '') => async (
     dispatch({ type: PRODUCT_LIST_REQUEST })
 
     const { data } = await axios.get(
-      `/api/products?keyword=${keyword}&pageNumber=${pageNumber}`
+      `/api/products/limit?keyword=${keyword}&pageNumber=${pageNumber}`
     )
 
     dispatch({
