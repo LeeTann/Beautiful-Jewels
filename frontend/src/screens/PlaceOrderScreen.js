@@ -13,6 +13,7 @@ import { useDispatch, useSelector } from 'react-redux'
 import Message from '../components/Message'
 import CheckoutSteps from '../components/CheckoutSteps'
 import { createOrder } from '../actions/orderActions'
+import { ORDER_CREATE_RESET } from '../constants/orderConstants'
 
 const PlaceOrderScreen = () => {
   const history = useHistory()
@@ -43,9 +44,10 @@ const PlaceOrderScreen = () => {
   useEffect(() => {
     if (success) {
       history.push(`/order/${order._id}`)
+      dispatch({ type: ORDER_CREATE_RESET })
     }
     // eslint-disable-next-line
-  }, [history, success])
+  }, [history, success, dispatch])
 
   const placeOrderHadler = () => {
     dispatch(
@@ -131,7 +133,13 @@ const PlaceOrderScreen = () => {
               <ListGroupItem>
                 <Row>
                   <Col>Shipping</Col>
-                  <Col>${cart.shippingPrice}</Col>
+                  <Col>
+                    {cart.shippingPrice > 0 ? (
+                      <p>${cart.shippingPrice}</p>
+                    ) : (
+                      'Free Shipping'
+                    )}
+                  </Col>
                 </Row>
               </ListGroupItem>
               <ListGroupItem>

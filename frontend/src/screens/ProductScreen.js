@@ -126,6 +126,7 @@ const ProductScreen = () => {
                         <Col>Qty</Col>
                         <Col>
                           <FormControl
+                            className='my-form'
                             as='select'
                             value={qty}
                             onChange={(e) => setQty(e.target.value)}
@@ -149,7 +150,9 @@ const ProductScreen = () => {
                       type='button'
                       disabled={product.countInStock === 0}
                     >
-                      Add to Cart
+                      {userInfo && product.countInStock === 0
+                        ? 'Out of Stock'
+                        : 'ADD TO CART'}
                     </Button>
                   </ListGroupItem>
                 </ListGroup>
@@ -158,7 +161,7 @@ const ProductScreen = () => {
           </Row>
 
           <Row>
-            <Col md={6}>
+            <Col md={10}>
               <h2>Reviews</h2>
               {product.reviews.length === 0 && <Message>No Reviews</Message>}
               <ListGroup variant='flush'>
@@ -207,7 +210,11 @@ const ProductScreen = () => {
                     </Form>
                   ) : (
                     <Message>
-                      Please <Link to='/login'>sign in</Link> to write a review
+                      Please{' '}
+                      <Link to='/login' className='link-color'>
+                        sign in
+                      </Link>{' '}
+                      to write a review
                     </Message>
                   )}
                 </ListGroupItem>
