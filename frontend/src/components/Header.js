@@ -19,7 +19,7 @@ const Header = () => {
       <Navbar bg='light' variant='light' expand='lg' collapseOnSelect>
         <Container>
           <LinkContainer to='/'>
-            <Navbar.Brand>Beautiful Jewelry</Navbar.Brand>
+            <Navbar.Brand>Beautiful Jewels</Navbar.Brand>
           </LinkContainer>
           <Navbar.Toggle aria-controls='basic-navbar-nav' />
           <Navbar.Collapse id='basic-navbar-nav'>

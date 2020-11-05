@@ -40,8 +40,8 @@ h3 {
 
 .carousel img {
   display: flex;
-  height: 300px;
-  padding: 30px;
+  height: 250px;
+  padding: 20px;
   border-radius: 50%;
   margin: 40px auto;
 }
@@ -100,4 +100,16 @@ a:hover {
 
 .navbar-brand {
   color: #f3a590 !important;
+}
+
+span.page-link {
+  background-color: #f3a590 !important;
+}
+
+.reg-login {
+  margin-top: 1rem;
+}
+
+.reg-login a {
+  color: #f58c72;
 }
