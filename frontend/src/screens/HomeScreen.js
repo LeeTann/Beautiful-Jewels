@@ -10,7 +10,6 @@ import { useParams } from 'react-router-dom'
 import Paginate from '../components/Paginate'
 import ProductCarousel from '../components/ProductCarousel'
 import Meta from '../components/Meta'
-import Ring from '../components/Ring'
 
 const HomeScreen = () => {
   const { keyword } = useParams()
@@ -19,7 +18,7 @@ const HomeScreen = () => {
 
   const productList = useSelector((state) => state.productList)
   const { loading, error, products, page, pages } = productList
-
+  console.log('products', products)
   useEffect(() => {
     dispatch(listProducts(keyword, pageNumber))
   }, [dispatch, keyword, pageNumber])

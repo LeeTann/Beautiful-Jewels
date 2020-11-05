@@ -94,11 +94,11 @@ const RegisterScreen = () => {
         </Button>
       </Form>
 
-      <Row py-3>
+      <Row py-3 className='reg-login'>
         <Col>
           Have an account?{' '}
           <Link to={redirect ? `/login?redirect=${redirect}` : '/login'}>
-            Login in
+            Login
           </Link>
         </Col>
       </Row>

@@ -5,11 +5,13 @@ main {
 h1 {
   font-size: 1.8rem;
   padding: 1rem 0;
+  color: #a3a3a3 !important;
 }
 
 h2 {
   font-size: 1.4rem;
   margin-top: 0.5rem 0;
+  padding-top: 1rem;
 }
 
 h3 {
@@ -32,22 +34,24 @@ h3 {
   top: 0;
 }
 
-.carousel-caption h2 {
+.carousel-caption h4 {
   color: #fff;
-  font-size: 1.4rem;
-  margin-top: 0.5rem 0;
 }
 
 .carousel img {
   display: flex;
-  height: 300px;
-  padding: 30px;
+  height: 250px;
+  padding: 20px;
   border-radius: 50%;
   margin: 40px auto;
 }
 
 .carousel a {
   margin: 0 auto;
+}
+
+.my-carousel {
+  background-color: #f7c4b8 !important;
 }
 
 .cat-nav {
@@ -61,5 +65,51 @@ h3 {
 }
 
 .cat-item:hover {
-  color: rgb(145, 139, 139) !important;
+  color: #f9bbac !important;
+}
+
+.search-button {
+  color: #f9bbac !important;
+  border-color: #f9bbac !important;
+}
+
+.search-button:hover {
+  color: whitesmoke !important;
+  border-color: whitesmoke !important;
+  background-color: #f9bbac !important;
+}
+
+.link-color {
+  color: #f58c72;
+}
+
+a:hover {
+  color: #f9bbac !important;
+}
+
+.my-form {
+  padding: 0.5rem 0.25rem !important;
+}
+
+.btn-primary {
+  background-color: #f9bbac !important;
+}
+.btn-primary:hover {
+  background-color: #f3a590 !important;
+}
+
+.navbar-brand {
+  color: #f3a590 !important;
+}
+
+span.page-link {
+  background-color: #f3a590 !important;
+}
+
+.reg-login {
+  margin-top: 1rem;
+}
+
+.reg-login a {
+  color: #f58c72;
 }
