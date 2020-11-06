@@ -1,9 +1,7 @@
 # Beautiful-Jewels
 https://beautiful-jewels.herokuapp.com/
 
-> eCommerce platform built with the MERN stack & Redux.
-
-This is the course project for my [MERN eCommerce From Scratch](https://www.udemy.com/course/mern-ecommerce) course
+> eCommerce platform built with the React, Redux, Express, Node.js and MongoDB.
 
 ![screenshot](https://github.com/LeeTann/Beautiful-Jewels/blob/master/uploads/beautifuljewels.png)
 
