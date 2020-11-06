@@ -3,7 +3,7 @@ https://beautiful-jewels.herokuapp.com/
 
 > eCommerce platform built with the React, Redux, Express, Node.js and MongoDB.
 
-![image](https://user-images.githubusercontent.com/42705234/98317224-fa4c7b00-1f90-11eb-94cc-df7d349da480.png)
+![image](https://user-images.githubusercontent.com/42705234/98317626-b27a2380-1f91-11eb-9eb3-948243a0ff7e.png)
 
 ## Features
 
