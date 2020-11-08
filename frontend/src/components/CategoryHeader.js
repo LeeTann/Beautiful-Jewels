@@ -1,27 +1,53 @@
 import React from 'react'
-import { LinkContainer } from 'react-router-bootstrap'
-import { Navbar, Container } from 'react-bootstrap'
+import { Navbar, Container, Nav } from 'react-bootstrap'
+import { Link } from 'react-router-dom'
 
 const CategoryHeader = () => {
   return (
-    <>
-      <Navbar className='cat-nav' bg='light' expand='lg' collapseOnSelect>
+    <header>
+      <Navbar
+        className='cat-nav'
+        bg='light'
+        variant='light'
+        expand='lg'
+        collapseOnSelect
+      >
         <Container>
-          <LinkContainer to='/products/rings'>
-            <Navbar.Text className='cat-item'>Rings</Navbar.Text>
-          </LinkContainer>
-          <LinkContainer to='/products/bracelets'>
-            <Navbar.Text className='cat-item'>Bracelets</Navbar.Text>
-          </LinkContainer>
-          <LinkContainer to='/products/necklaces'>
-            <Navbar.Text className='cat-item'>Necklaces</Navbar.Text>
-          </LinkContainer>
-          <LinkContainer to='/products/earrings'>
-            <Navbar.Text className='cat-item'>Earrings</Navbar.Text>
-          </LinkContainer>
+          <Navbar.Toggle aria-controls='basic-navbar-nav' />
+          <Navbar.Collapse id='basic-navbar-nav'>
+            <Nav className='ml-auto cat-nav-items'>
+              <Nav.Link as={Link} to='/products/rings' href='/products/rings'>
+                <Navbar.Text className='cat-item'>Rings</Navbar.Text>
+              </Nav.Link>
+              <Nav.Link
+                as={Link}
+                to='/products/bracelets'
+                href='/products/bracelets'
+              >
+                <Navbar.Text className='cat-item'>Bracelets</Navbar.Text>
+              </Nav.Link>
+              <Nav.Link
+                as={Link}
+                to='/products/necklaces'
+                href='/products/necklaces'
+              >
+                <Navbar.Text className='cat-item'>Necklaces</Navbar.Text>
+              </Nav.Link>
+              <Nav.Link
+                as={Link}
+                to='/products/earrings'
+                href='/products/earrings'
+              >
+                <Navbar.Text className='cat-item'>Earrings</Navbar.Text>
+              </Nav.Link>
+              <Nav.Link as={Link} to='/contact' href='/contact'>
+                <Navbar.Text className='cat-item'>Contact</Navbar.Text>
+              </Nav.Link>
+            </Nav>
+          </Navbar.Collapse>
         </Container>
       </Navbar>
-    </>
+    </header>
   )
 }
 

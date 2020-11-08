@@ -5,7 +5,7 @@ main {
 h1 {
   font-size: 1.8rem;
   padding: 1rem 0;
-  color: #a3a3a3 !important;
+  color: #9ed7ee !important;
 }
 
 h2 {
@@ -56,6 +56,12 @@ h3 {
 
 .cat-nav {
   padding: 10px 10px !important;
+}
+
+.cat-nav-items {
+  display: flex !important;
+  justify-content: space-between !important;
+  width: 100% !important;
 }
 
 .cat-item {
