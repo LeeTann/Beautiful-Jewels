@@ -5,7 +5,7 @@ main {
 h1 {
   font-size: 1.8rem;
   padding: 1rem 0;
-  color: #9ed7ee !important;
+  color: #817d7d !important;
 }
 
 h2 {
@@ -65,13 +65,17 @@ h3 {
 }
 
 .cat-item {
-  color: rgb(52, 58, 64) !important;
+  color: #817d7d !important;
   font-size: larger;
   cursor: pointer;
 }
 
 .cat-item:hover {
   color: #f9bbac !important;
+}
+
+.nav-item a {
+  color: #54e8fc;
 }
 
 .search-button {
@@ -118,4 +122,8 @@ span.page-link {
 
 .reg-login a {
   color: #f58c72;
+}
+
+.method-warning {
+  color: red;
 }
