@@ -28,7 +28,7 @@ const BraceletScreen = () => {
       <Link to='/' className='btn btn-light'>
         Go Back
       </Link>
-      <h1>Bracelets Screen</h1>
+      <h1>Bracelets</h1>
       {loading ? (
         <Loader />
       ) : error ? (

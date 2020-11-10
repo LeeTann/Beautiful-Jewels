@@ -29,7 +29,7 @@ const RingScreen = () => {
       <Link to='/' className='btn btn-light'>
         Go Back
       </Link>
-      <h1>Rings Screen</h1>
+      <h1>Rings</h1>
       {loading ? (
         <Loader />
       ) : error ? (

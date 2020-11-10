@@ -28,7 +28,7 @@ const EarringScreen = () => {
       <Link to='/' className='btn btn-light'>
         Go Back
       </Link>
-      <h1>Earring Screen</h1>
+      <h1>Earring</h1>
       {loading ? (
         <Loader />
       ) : error ? (
