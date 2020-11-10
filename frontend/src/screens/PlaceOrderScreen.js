@@ -81,7 +81,13 @@ const PlaceOrderScreen = () => {
             <ListGroupItem>
               <h2>Payment Method</h2>
               <strong>Method: </strong>
-              {cart.paymentMethod}
+              {cart.paymentMethod ? (
+                `${cart.paymentMethod} or Credit Card`
+              ) : (
+                <span className='method-warning'>
+                  Payment method not selected
+                </span>
+              )}
             </ListGroupItem>
 
             <ListGroupItem>
