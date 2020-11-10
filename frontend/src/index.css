@@ -112,6 +112,10 @@ a:hover {
   color: #f3a590 !important;
 }
 
+.navbar-text {
+  padding: 0px !important;
+}
+
 span.page-link {
   background-color: #f3a590 !important;
 }
@@ -126,4 +130,16 @@ span.page-link {
 
 .method-warning {
   color: red;
+}
+
+@media (max-width: 400px) {
+  h1 {
+    font-size: 1.2rem !important;
+  }
+  h2 {
+    font-size: 1.2rem !important;
+  }
+  .cat-nav {
+    padding: 10px 10px !important;
+  }
 }
