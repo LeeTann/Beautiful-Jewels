@@ -127,9 +127,21 @@ span.page-link {
 .reg-login a {
   color: #f58c72;
 }
+.alert a {
+  color: #f58c72 !important;
+}
 
 .method-warning {
   color: red;
+}
+
+.aboutus-pic {
+  width: 100%;
+  height: auto;
+  border: 5px solid #f58c72;
+}
+.about-p {
+  margin-top: 15px;
 }
 
 @media (max-width: 400px) {

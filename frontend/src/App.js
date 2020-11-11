@@ -24,6 +24,7 @@ import BraceletScreen from './screens/BraceletScreen'
 import NecklaceScreen from './screens/NecklaceScreen'
 import EarringScreen from './screens/EarringScreen'
 import ContactScreen from './screens/ContactScreen'
+import AboutScreen from './screens/AboutScreen'
 
 const App = () => {
   return (
@@ -32,6 +33,7 @@ const App = () => {
       <CategoryHeader />
       <main className='py-3'>
         <Container>
+          <Route path='/about' component={AboutScreen} />
           <Route path='/contact' component={ContactScreen} />
           <Route path='/products/earrings' component={EarringScreen} />
           <Route path='/products/necklaces' component={NecklaceScreen} />

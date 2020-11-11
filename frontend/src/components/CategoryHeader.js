@@ -43,6 +43,9 @@ const CategoryHeader = () => {
               <Nav.Link as={Link} to='/contact' href='/contact'>
                 <Navbar.Text className='cat-item'>Contact</Navbar.Text>
               </Nav.Link>
+              <Nav.Link as={Link} to='/about' href='/about'>
+                <Navbar.Text className='cat-item'>About</Navbar.Text>
+              </Nav.Link>
             </Nav>
           </Navbar.Collapse>
         </Container>
